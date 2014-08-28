@@ -6,8 +6,8 @@ Maintenance
 Termination
 
 *Random Access machine Model(RAM)*: An abstract (but realistic) model of computation.
--Single process model
--each basic intruction takes a constant amount of time. Three Kinds
++Single process model
++each basic intruction takes a constant amount of time. Three Kinds
 	1)Arithmetic
 	2)Data movement: Load, store, copy
 	3)Control: conditional and unconditional branching, functions/procedure call and return

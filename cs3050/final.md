@@ -26,7 +26,7 @@ Red Back Tree's
 - everything is good 
 
 ###Deletion###
-**complecated deletion**
+**complecated deletion**  
 if x points to root everythings good no worries  
 if x points to red node then change it black and everything is fixed  
 if x ponits to black node then

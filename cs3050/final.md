@@ -27,9 +27,8 @@ Red Back Tree's
 
 ###Deletion###
 **complecated deletion**
-- if x points to root everythings good no worries
-- if x points to red node then change it black and everything is fixed
-- if x ponits to black node then
-	- Unordered sub-list
+if x points to root everythings good no worries  
+if x points to red node then change it black and everything is fixed  
+if x ponits to black node then
+- **case 1: sibling is red node** 
 
-$$F(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(t) \, e^{ - i \omega t}dt$$

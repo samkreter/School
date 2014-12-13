@@ -11,10 +11,16 @@ Red Back Tree's
 ###Insertion###
 **Parent is black** - everything is fine. done
 
-**Parent and Uncle are red**
+**Case 1: Parent and Uncle are red**
 - make grandparent red
 - parent and uncle black
-- move z to its parent 
+- move z to its grandparent 
 
-**Parent is red and is left child of grandparent**
+**Case 2: Parent is red and is left child of grandparent, uncle is black z is right child**
 - left rotate parent
+- z becomes right child
+
+**Case 3: Parent is red and is left child of grandparent, uncle is black z is right child**
+- make parent black and grandparent red
+- right rotate on grandparent
+- everything is good 

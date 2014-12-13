@@ -1,0 +1,28 @@
+// Good solution
+function boolean hasLoop(Node startNode){
+  Node currentNode = startNode;
+  Node checkNode = null;
+  int since = 0;
+  int sinceScale = 2;
+  do {
+    if (checkNode == currentNode) return true;
+    if (since >= sinceScale){
+        checkNode = currentNode;
+        since = 0;
+        sinceScale = 2*sinceScale;
+    }
+    since++;
+  } while (currentNode = currentNode.next());
+  return false;
+}
+
+
+// Best solution
+function boolean hasLoop(Node startNode){
+  Node slowNode = Node fastNode1 = Node fastNode2 = startNode;
+  while (slowNode && fastNode1 = fastNode2.next() && fastNode2 = fastNode1.next()){
+    if (slowNode == fastNode1 || slowNode == fastNode2) return true;
+    slowNode = slowNode.next();
+  }
+  return false;
+}
